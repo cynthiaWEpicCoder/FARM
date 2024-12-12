@@ -72,6 +72,26 @@ public abstract class Farmer{
     }
   }
 
+  public void produce(){
+    int ripeInd = -1;
+    for (int i = 0; i < farm.size(); i++){
+      if (inv.get(i).equals("Ripe " + this.getCrop()){
+        ripeInd = i;
+        break;
+      }
+    }
+    if (ripeInd == -1){
+      System.out.println("You tried to produce a " + this.getProduce() + " but realized you had no ripe " + this.getCrop() + ".");
+      turns -= 1;
+    }
+    if (ripeInd != -1){
+      inv.remove(ripeInd);
+      inv.add(this.getProduce());
+      turns -= 1;
+      System.out.print("You used a ripe " + this.getCrop() + " to produce a " + this.getProduce() + ".");
+    }
+  }
+  
   public void sell(){
     int produceInd = -1;
     for (int i = 0; i< inv.size(); i++){
@@ -80,6 +100,16 @@ public abstract class Farmer{
         break;
       }
     }
-    if (ripeInd != 
+    if (produceInd == -1){
+      System.out.println("You went to the market to sell your goods but realized you had none.");
+      turns -= 1;
+    }
+    if (produceInd != -1){
+      inv.remove(produceInd);
+      coins += 10;
+      turns -= 1;
+      System.out.println("You went to the market and sold a " + this.getProduce() + ".");
+    }
+  }
   
 }
