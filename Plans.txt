@@ -3,7 +3,7 @@ Welcome msg/backstory: You wake up and ur in a farm and ur stuck.
 Choose a role: Produce Farmer, Livestock Farmer, Grain Farmer
 Object of the game: make enough coins to buy a train ticket and escape the farm.
 
-Every day: 5 moves
+Every day: 7 moves
 Options for moves
 1. Plant
 2. Harvest (if theres a ripe plant)
@@ -12,12 +12,13 @@ Options for moves
 5. Sell (if you have goods, sell for 10 coins)
 
 Nightmares
-1. Inventory gone
-2. Stock Market up (sell things for double coins)
+1. Tornado (inventory gone)
+2. Stonk Market up (sell things for double coins)
 3. Jim (mild demon) - Take 10% of coins
-4. 
-5.
-6.
-7.
+4. Jennifer (spicy demon) - Take 50% of coines
+5. A mysterious stranger needs medical bills (pay $10). 
+  (If stranger has come before) The mysterious stranger returns needing money again. You decline and he beats you up and takes $10
+6. 
+7. 
 8. Win the lottery (get 20 coins)
-9. Daylight gainings extra turns
+9. Daylight gainings (2 extra turns)
