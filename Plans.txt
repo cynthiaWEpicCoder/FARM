@@ -14,12 +14,12 @@ Options for moves
 Nightmares
 1. Tornado (inventory gone)
 2. Stonk Market up (sell things for double coins)
-3. Jim (mild demon) - Take ?% of coins (random number generator of 0, 10, 20,.., 100 %)
+3. Jim (greedy demon) - Take ?% of coins (random number generator of 0, 10, 20,.., 100 %)
 4. Jennifer (spicy demon) - Take ?% of coines
 5. Mira (chill demon) - Mira really wants to attend a Gracie concert so she takes __% of your money.
-6. Jack (hungry demon)
-7. Jill (tired demon)
+6. Jack (hungry demon) - farm gone
+7. Jill (angry demon) - Random number generator using length of farm array, that many are removed.
 8. A mysterious stranger needs medical bills (pay $10). 
 9. (If stranger has come before) The mysterious stranger returns needing money again. You decline and he beats you up and takes $10
 10. Win the lottery (get 20 coins)
-11. Daylight gainings (2 extra turns)
+11. Daylight gainings (2 extra moves)
