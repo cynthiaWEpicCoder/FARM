@@ -18,10 +18,6 @@ public abstract class Farmer{
     return name;
   }
 
-  public String getType (){
-    return type;
-  }
-
   public int getCoins (){
     return coins;
   }
@@ -34,14 +30,7 @@ public abstract class Farmer{
     name = newName;
   }
 
-  public void setType (String newType){
-    type = newType;
-  }
-
   public void setCoins (int newCoins){
     coins = newCoins;
   }
-
-  
-  
 }
