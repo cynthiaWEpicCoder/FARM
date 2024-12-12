@@ -27,6 +27,10 @@ public abstract class Farmer{
     return coins;
   }
 
+  public ArrayList getInventory (){
+    return inv;
+  }
+
   public void setName (String newName){
     name = newName;
   }
@@ -39,5 +43,6 @@ public abstract class Farmer{
     coins = newCoins;
   }
 
+  
   
 }
