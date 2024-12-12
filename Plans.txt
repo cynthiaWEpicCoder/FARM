@@ -1,0 +1,23 @@
+Start of game (day 0):
+Welcome msg/backstory: You wake up and ur in a farm and ur stuck.
+Choose a role: Produce Farmer, Livestock Farmer, Grain Farmer
+Object of the game: make enough coins to buy a train ticket and escape the farm.
+
+Every day: 5 moves
+Options for moves
+1. Plant
+2. Harvest (if theres a ripe plant)
+3. Water (if there are unripe plants) (water 2 times to ripen)
+4. Produce (if you have collected ripe plants in ur inventory. Apples -> pie, Milk -> cheese, Wheat -> bread.
+5. Sell (if you have goods, sell for 10 coins)
+
+Nightmares
+1. Inventory gone
+2. Stock Market up (sell things for double coins)
+3. Jim (mild demon) - Take 10% of coins
+4. 
+5.
+6.
+7.
+8. Win the lottery (get 20 coins)
+9. 
