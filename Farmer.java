@@ -15,5 +15,29 @@ public abstract class Farmer{
     this.type = type;
   }
 
+  public String getName (){
+    return name;
+  }
+
+  public String getType (){
+    return type;
+  }
+
+  public int getCoins (){
+    return coins;
+  }
+
+  public void setName (String newName){
+    name = newName;
+  }
+
+  public void setType (String newType){
+    type = newType;
+  }
+
+  public void setCoins (int newCoins){
+    coins = newCoins;
+  }
+
   
 }
