@@ -9,10 +9,9 @@ public abstract class Farmer{
 
   /*There is no no-arg constructor. Be careful with your subclass constructors.*/
   
-  public Farmer(String name, String type){
+  public Farmer(String name){
     this.name = name;
     this.coins = 0;
-    this.type = type;
   }
 
   public String getName (){
