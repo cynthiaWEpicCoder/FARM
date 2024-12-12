@@ -33,4 +33,7 @@ public abstract class Farmer{
   public void setCoins (int newCoins){
     coins = newCoins;
   }
+
+  public abstract String getCrop();
+  public abstract String getProduce();
 }
