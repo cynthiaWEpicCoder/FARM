@@ -7,7 +7,7 @@ Every day: 7 moves
 Options for moves
 1. Plant
 2. Harvest (if theres a ripe plant)
-3. Water (if there are unripe plants) (water 2 times to ripen)
+3. Water (if there are unripe plants) (water 2 times to ripen) (waters ALL plants)
 4. Produce (if you have collected ripe plants in ur inventory. Apples -> pie, Milk -> cheese, Wheat -> bread.
 5. Sell (if you have goods, sell for 10 coins)
 
