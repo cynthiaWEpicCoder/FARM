@@ -1,12 +1,12 @@
-class LivestockFarmer implements Farmer{
-  public FruitFarmer(String name){
+class VeggieFarmer implements Farmer{
+  public VeggieFarmer(String name){
     super(name);
   }
   public String getCrop(){
-    return "milk";
+    return "lettuce";
   }
 
   public String getProduce(){
-    return "cheese";
+    return "salad";
   }
 }
