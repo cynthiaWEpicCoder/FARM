@@ -28,12 +28,21 @@ public abstract class Farmer{
     return inv;
   }
 
+  
   public void setName (String newName){
     name = newName;
   }
 
   public void setCoins (int newCoins){
     coins = newCoins;
+  }
+
+  public String getInv(){
+    return inv.toString();
+  }
+
+  public String getFarm(){
+    return farm.toString();
   }
 
   public abstract String getCrop();
