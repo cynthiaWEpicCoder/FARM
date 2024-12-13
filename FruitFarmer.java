@@ -8,7 +8,6 @@ class FruitFarmer implements Farmer{
   public String getCrop(){
     return "apple";
   }
-
   public String getProduce(){
     return "pie";
   }
