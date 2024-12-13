@@ -113,7 +113,7 @@ public abstract class Farmer{
     }
   }
   
-  public void sell(){
+  public void sell(boolean stonksUp){
     int produceInd = -1;
     for (int i = 0; i< inv.size(); i++){
       if (inv.get(i).equals(this.getProduce())){
@@ -127,6 +127,9 @@ public abstract class Farmer{
     }
     if (produceInd != -1){
       inv.remove(produceInd);
+      if (stonksUp){
+        coins += 10;
+      }
       coins += 10;
       turns -= 1;
       System.out.println("You went to the market and sold a " + this.getProduce() + ".");
