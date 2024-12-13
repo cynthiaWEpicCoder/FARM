@@ -62,6 +62,13 @@ public abstract class Farmer{
     turns = newTurns;
   }
 
+  public void printStatus(){
+    System.out.println("You have " + this.getTurns() + " turns remaining.};
+    System.out.println("You have " + this.getCoins() + " coins.");
+    System.out.println("Your inventory: " + this.getInv());
+    System.out.println("Your farm crops (number of times watered): " + this.getFarm());
+  }
+
   public abstract String getCrop();
   public abstract String getProduce();
 
