@@ -29,6 +29,9 @@ public abstract class Farmer{
     return inv;
   }
 
+  public void emptyInventory(){
+    inv = new ArrayList();
+  }
   
   public void setName (String newName){
     name = newName;
