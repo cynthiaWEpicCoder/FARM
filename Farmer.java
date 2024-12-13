@@ -55,7 +55,7 @@ public abstract class Farmer{
   }
   
   public void water(){
-    for (int i = 0; i < farm.getSize(); i++){
+    for (int i = 0; i < farm.size(); i++){
       farm.set(i, farm.get(i)+1);
     }
     turns -= 1;
