@@ -4,8 +4,8 @@ import java.util.*;
 public abstract class Farmer{
   private String name;
   private int coins;
-  private ArrayList<Integer> farm = ArrayList<Integer>();
-  private ArrayList<String> inv = ArrayList<String>();
+  private ArrayList<Integer> farm = new ArrayList<Integer>();
+  private ArrayList<String> inv = new ArrayList<String>();
   private String type;
   private int turns = 5;
 
@@ -84,7 +84,7 @@ public abstract class Farmer{
   public void produce(){
     int ripeInd = -1;
     for (int i = 0; i < farm.size(); i++){
-      if (inv.get(i).equals("Ripe " + this.getCrop()){
+      if (inv.get(i).equals("Ripe " + this.getCrop())){
         ripeInd = i;
         break;
       }
