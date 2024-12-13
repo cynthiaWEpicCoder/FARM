@@ -13,10 +13,10 @@ Options for moves
 
 Nightmares
 1. Tornado (inventory gone) - "A tornado visits your farm. All of your crops are gone. Your inventory is now size 0."
-2. Stonk Market up (sell things for double coins) - 
-3. Jim (greedy demon) - Take ?% of coins (random number generator of 0, 10, 20,.., 100 %)
-4. Jennifer (spicy demon) - Take ?% of coines
-5. Mira (chill demon) - Mira really wants to attend a Gracie concert so she takes __% of your money.
+2. Stonk Market up (sell things for double coins) - "Overnight, the stonk market goes up. Tomorrow, your " + this.getProduce() + " sells for double coins. Hooray!"
+3. Jim (mild demon) - Take ?% of coins (random number generator of 10, 20,.., 50 %) "Jim the Mild Demon visits your farm. You lose __ coins. Unfortunate."
+4. Jennifer (spicy demon) - Take ?% of coines from 50-100 "Jennifer the Spicy Demon visits your farm. You lose __ coins. Unfortunate."
+5. Mira (chill demon) - Mira really wants to attend a Gracie concert so she takes 75% of your money. 
 6. Jack (hungry demon) - farm gone
 7. Jill (angry demon) - Random number generator using length of farm array, that many are removed.
 8. A mysterious stranger needs medical bills (pay $10). 
