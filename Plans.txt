@@ -16,13 +16,13 @@ Nightmares
 2. Stonk Market up (sell things for double coins) - "Overnight, the stonk market goes up. Tomorrow, your " + this.getProduce() + " sells for double coins. Hooray!"
 3. Jim (mild demon) - Take ?% of coins (random number generator of 10, 20,.., 50 %) "Jim the Mild Demon visits your farm. You lose __ coins. Unfortunate."
 4. Jennifer (spicy demon) - Take ?% of coines from 50-100 "Jennifer the Spicy Demon visits your farm. You lose __ coins. Unfortunate."
-5. Mira (chill demon) - Mira really wants to attend a Gracie concert so she takes 75% of your money. 
-6. Jack (hungry demon) - farm gone
-7. Jill (angry demon) - Random number generator using length of farm array, that many are removed.
-8. A mysterious stranger needs medical bills (pay $10). 
-9. (If stranger has come before) The mysterious stranger returns needing money again. You decline and he beats you up and takes $10
-10. Win the lottery (get 20 coins)
-11. Daylight gainings (2 extra moves)
+5. Mira (chill demon) - Mira really wants to attend a Gracie concert so she takes 75% of your money. "Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!"
+6. Jack (hungry demon) - farm gone "Jack the Hungry Demon visits your farm. He eats all of your plants. Your farm is now size 0."
+7. Jill (angry demon) - Random number generator using length of farm array, that many are removed. "Jill the Angry Demon visits your farm. She eats ___ of your plants. "
+8. A mysterious stranger needs medical bills (pay $10). "A mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way." 
+9. (If stranger has come before) The mysterious stranger returns needing money again. You decline and he beats you up and takes $10 "The mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins."
+10. Win the lottery (get 20 coins) "Congrats! You win 20 coins from a lottery somewhere."
+11. Daylight gainings (2 extra moves) "Daylight gainings occurs. You get 2 extra moves this turn. Spend them wisely..."
 
 
 
