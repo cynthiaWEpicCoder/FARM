@@ -25,6 +25,7 @@ public class Driver{
             day ++;
             System.out.println("~~~~~~~~ DAY " + day + " ~~~~~~~~");
             while (player1.getTurns() > 0){
+                player1.printStatus();
                 System.out.println("What will you do next? \n1 to plant \n2 to water \n3 to harvest \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
                 turn(move);
@@ -74,5 +75,15 @@ public class Driver{
             System.out.println("Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
             player1.setCoins(player1.getCoins() * lossPercent*0.01);
         }
+        if (nightmareType == 5){
+            System.out.println("Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
+            player1.setCoings(player1.getCoins() * 0.75);
+        }
+        if (nightmareType == 6){
+            System.out.println("Jack the Hungry Demon visits your farm. He eats all of your plants. Your farm is now size 0.");
+            player1.emptyFarm();
+        }
+        if (nightmareType == 7){
+            
     }               
 }
