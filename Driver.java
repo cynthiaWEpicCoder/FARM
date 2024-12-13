@@ -4,7 +4,7 @@ public class Driver{
         player1.plant();
         player1.water();
         player1.water();
-        System.out.println(player1.getFarm);
+        System.out.println(player1.getFarm());
         player1.harvest();
         System.out.println(player1.getInv());
         player1.produce();
