@@ -59,7 +59,7 @@ public abstract class Farmer{
       farm.set(i, farm.get(i)+1);
     }
     turns -= 1;
-    System.out.println("You watered all your" + this.getCrop()+ "s.");
+    System.out.println("You watered all your " + this.getCrop()+ "s.");
   }
 
   public void harvest(){
@@ -83,7 +83,7 @@ public abstract class Farmer{
 
   public void produce(){
     int ripeInd = -1;
-    for (int i = 0; i < farm.size(); i++){
+    for (int i = 0; i < inv.size(); i++){
       if (inv.get(i).equals("Ripe " + this.getCrop())){
         ripeInd = i;
         break;
