@@ -38,7 +38,12 @@ public abstract class Farmer{
   }
 
   public void setCoins (int newCoins){
-    coins = newCoins;
+    if (newCoins < 0){
+      coins = 0;
+    }
+    else{
+      coins = newCoins;
+    }
   }
 
   public String getInv(){
