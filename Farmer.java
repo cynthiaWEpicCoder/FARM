@@ -30,7 +30,7 @@ public abstract class Farmer{
   }
 
   public void emptyInventory(){
-    inv = new ArrayList();
+    inv = new ArrayList<String>();
   }
   
   public void setName (String newName){
@@ -52,6 +52,10 @@ public abstract class Farmer{
 
   public String getFarm(){
     return farm.toString();
+  }
+
+  public void emptyFarm(){
+    farm = new ArrayList<int>();
   }
 
   public int getTurns(){
