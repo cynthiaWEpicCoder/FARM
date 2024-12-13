@@ -3,6 +3,11 @@ import java.util.*;
 public class Driver{
     public static void main (String[] args){
         Farmer player1 = new FruitFarmer ("Aud");
+        public void printMsg (){
+    System.out.println ("Hello __, and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
+    System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 100 gold coins. To make money, you need to work.");
+    System.out.println ("What type of farmer will you be? \n1 for fruit farmer \n2 for grain farmer \n3 for veggie farmer");
+  }
         player1.plant();
         player1.water();
         player1.water();
