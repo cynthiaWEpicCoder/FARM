@@ -18,7 +18,8 @@ public abstract class Farmer{
 
   public void printMsg (){
     System.out.println ("Hello __, and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
-    System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 100 gold coins. To make money, you need to work. What type of farmer will you be?");
+    System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 100 gold coins. To make money, you need to work.");
+    System.out.println ("What type of farmer will you be? \n1 for fruit farmer \n2 for grain farmer \n3 for veggie farmer");
   }
   public String getName (){
     return name;
@@ -47,6 +48,14 @@ public abstract class Farmer{
 
   public String getFarm(){
     return farm.toString();
+  }
+
+  public int getTurns(){
+    return turns;
+  }
+
+  public void setTurns (int newTurns){
+    turns = newTurns;
   }
 
   public abstract String getCrop();
