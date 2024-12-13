@@ -1,4 +1,4 @@
-class VeggieFarmer implements Farmer{
+class VeggieFarmer extends Farmer{
   public VeggieFarmer(String name){
     super(name);
     System.out.println ("You start your journey at Nightmare Farm as a veggie farmer. Your goal is to earn 100 coins and escape the farm.");
