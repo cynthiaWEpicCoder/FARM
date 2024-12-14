@@ -31,7 +31,7 @@ public class Driver{
                 player1.printStatus();
                 System.out.println("What will you do next? \n1 to plant \n2 to water \n3 to harvest \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
-                turn(move, player1);
+                turn(move);
             }
             stonksUp = false;
             daylightGivings = false;
@@ -72,16 +72,16 @@ public class Driver{
         if (nightmareType == 3){
             int lossPercent = (rand.nextInt(5)+ 1) * 10;
             System.out.println("Jim the Mild Demon visits your farm and helps himself to some yummy coins. You lose " + lossPercent+ "% of your coins. Unfortunate.");
-            player1.setCoins(player1.getCoins() * lossPercent*0.01);
+            player1.setCoins((int) player1.getCoins() * lossPercent*0.01);
         }
         if (nightmareType == 4){
             int lossPercent = (rand.nextInt(5)+ 6) * 10;
             System.out.println("Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
-            player1.setCoins(player1.getCoins() * lossPercent*0.01);
+            player1.setCoins((int) player1.getCoins() * lossPercent*0.01);
         }
         if (nightmareType == 5){
             System.out.println("Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
-            player1.setCoins(player1.getCoins() * 0.75);
+            player1.setCoins((int) player1.getCoins() * 0.75);
         }
         if (nightmareType == 6){
             System.out.println("Jack the Hungry Demon visits your farm. He eats all of your plants. Your farm is now size 0.");
@@ -92,22 +92,22 @@ public class Driver{
             System.out.println("Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants. ");
             player1.removeFarm(numLost);
         }
-        if (nightmareType = 8){
+        if (nightmareType == 8){
             if (strangerHasCome){
                 System.out.println("At night, the mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins.");
-                player1.setCoins(player2.getCoins() - 10);
+                player1.setCoins(player1.getCoins() - 10);
             }
             else { 
                 System.out.println("At night, a mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way.");
-                player1.setCoins(player2.getCoins() - 10);
+                player1.setCoins(player1.getCoins() - 10);
                 strangerHasCome = true;
             }
         }
-        if (nightmareType = 9){ 
+        if (nightmareType == 9){ 
             System.out.println("Congrats! You win 20 coins from a lottery somewhere.");
-            player1.setCoins(player2.getCoins() + 20);
+            player1.setCoins(player1.getCoins() + 20);
         }
-        if (nightmareType = 10){
+        if (nightmareType == 10){
             System.out.println("Daylight gainings occurs. You get 2 extra moves tomorrow. Spend them wisely...");
             daylightGivings = true;
         }
