@@ -32,6 +32,7 @@ public class Driver{
                 System.out.println("What will you do next? \n1 to plant \n2 to water (water twice to ripen!) \n3 to harvest  \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
                 turn(move);
+                System.out.println();
             }
             stonksUp = false;
             daylightGivings = false;
@@ -41,6 +42,7 @@ public class Driver{
             if (daylightGivings){
                 player1.setTurns(7);
             }
+            System.out.println();
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
     }
