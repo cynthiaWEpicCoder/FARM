@@ -12,7 +12,7 @@ public class Driver{
         System.out.println("What is your name?");
         String name = input.nextLine();
         System.out.println ("Hello " + name + ", and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
-        System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 100 gold coins. To make money, you need to work.");
+        System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 150 gold coins. To make money, you need to work.");
         System.out.println ("What type of farmer will you be? \n1 for fruit farmer \n2 for grain farmer \n3 for veggie farmer");
         int farmerType = input.nextInt();
         if (farmerType == 1){
@@ -24,7 +24,7 @@ public class Driver{
         if (farmerType == 3){
             player1 = new VeggieFarmer(name);
         }
-        while (player1.getCoins() < 100){
+        while (player1.getCoins() < 150){
             day ++;
             System.out.println("~~~~~~~~ DAY " + day + " ~~~~~~~~");
             while (player1.getTurns() > 0){
@@ -46,6 +46,9 @@ public class Driver{
             System.out.println();
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
+        System.out.println ("You take a seat on the Super-Duper-Rico train and breathe out a sigh of relief. The train hurtles out of the station, and you watch Nightmare Farm disappear into the distance outside the window. 
+Soon enough, the steady jostling of the train puts you into a deep sleep, and hours later, you open your eyes to find that you are back in the comfort of your bed, safe within your home. Murky memories of a farm, and demons, and annoying mysterious men start to surface, but they fade quickly as you turn over and go back to sleep.
+What a strange dream! Or was it?");
     }
     public static void turn(int turnType){
         if (turnType == 1){
@@ -66,39 +69,39 @@ public class Driver{
     }
 
     public static void nightmare(){
-        int nightmareType = rand.nextInt(10) + 1;
-        if (nightmareType == 1){
+        int nightmareType = rand.nextInt(22) + 1;
+        if (1 <= nightmareType && nightmareType <= 3){
             System.out.println("Last night, a tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
             player1.emptyInventory();
         }
-        if (nightmareType == 2){
+        if (nightmareType == 4){
             System.out.println("Overnight, the stonk market goes up. Tomorrow, your " + player1.getProduce() + " sells for double coins. Hooray!");
             stonksUp = true;
         }
-        if (nightmareType == 3){
+        if (5 <= nightmareType && nightmareType <= 7){
             int lossPercent = (rand.nextInt(5)+ 1) * 10;
             System.out.println("At night, Jim the Mild Demon visits your farm and helps himself to some yummy coins. You lose " + lossPercent+ "% of your coins. Unfortunate.");
             player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
-        if (nightmareType == 4){
+        if (8 <= nightmareType && nightmareType <= 10){
             int lossPercent = (rand.nextInt(5)+ 6) * 10;
             System.out.println("At night, Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
             player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
-        if (nightmareType == 5){
+        if (nightmareType == 11){
             System.out.println("At night, Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
             player1.setCoins((int) Math.round(player1.getCoins() * 0.75));
         }
-        if (nightmareType == 6){
+        if (12 <= nightmareType && nightmareType <= 14){
             System.out.println("At night, Jack the Hungry Demon visits your farm. He eats all of the crops from your farm. Yum! Your farm is now size 0...");
             player1.emptyFarm();
         }
-        if (nightmareType == 7){
+        if (15 <= nightmareType && nightmareType <= 17){
             int numLost = rand.nextInt(player1.getFarmSize())+1;
             System.out.println("At night, Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants from your farm. ");
             player1.removeFarm(numLost);
         }
-        if (nightmareType == 8){
+        if (18 <= nightmareType && nightmareType <= 20){
             if (strangerHasCome){
                 System.out.println("At night, the mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins.");
                 player1.setCoins((int) Math.round(player1.getCoins() - 10));
@@ -109,11 +112,11 @@ public class Driver{
                 strangerHasCome = true;
             }
         }
-        if (nightmareType == 9){ 
+        if (nightmareType == 21){ 
             System.out.println("At night, a mysterious lottery ticket appears in your mailbox. You check the winning numbers and you won 20 coins!");
             player1.setCoins((int) Math.round(player1.getCoins() + 20));
         }
-        if (nightmareType == 10){
+        if (nightmareType == 22){
             System.out.println("You wake up oddly early to the sun in your face. Daylight gainings is today! You get 2 extra moves. Spend them wisely...");
             daylightGivings = true;
         }
