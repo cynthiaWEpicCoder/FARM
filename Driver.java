@@ -72,12 +72,12 @@ public class Driver{
         if (nightmareType == 3){
             int lossPercent = (rand.nextInt(5)+ 1) * 10;
             System.out.println("Jim the Mild Demon visits your farm and helps himself to some yummy coins. You lose " + lossPercent+ "% of your coins. Unfortunate.");
-            player1.setCoins((int) Math.round(player1.getCoins() * lossPercent*0.01));
+            player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
         if (nightmareType == 4){
             int lossPercent = (rand.nextInt(5)+ 6) * 10;
             System.out.println("Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
-            player1.setCoins((int) Math.round(player1.getCoins() * lossPercent*0.01));
+            player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
         if (nightmareType == 5){
             System.out.println("Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
