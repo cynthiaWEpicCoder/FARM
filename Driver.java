@@ -107,13 +107,19 @@ public class Driver{
                 }
                 else {
                     System.out.println ("At night, the mysterious stranger returns and asks for more money. You show him your utterly empty wallet, and he feels so bad for you that he donates you 1 coin.");
-                    player1.set
+                    player1.setCoins (player1.getCoins() + 1);
                 }
             }
             else { 
-                System.out.println("At night, a mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way.");
-                player1.setCoins((int) Math.round(player1.getCoins() - 10));
-                strangerHasCome = true;
+                if (player.getCoins() >= 10) {
+                    System.out.println("At night, a mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way.");
+                    player1.setCoins((int) Math.round(player1.getCoins() - 10));
+                    strangerHasCome = true;
+                }
+                else {
+                    System.out.println ("At night, a mysterious injured stranger visits your farm, asking for 10 coins for medical treatment. You show him your utterly empty wallet, and he feels so bad for you that he donates you 1 coin.");
+                    player1.setCoins (player1.getCoins() + 1);
+                }
             }
         }
         if (nightmareType == 21){ 
