@@ -101,8 +101,14 @@ public class Driver{
         }
         if (18 <= nightmareType && nightmareType <= 20){
             if (strangerHasCome){
-                System.out.println("At night, the mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins.");
-                player1.setCoins((int) Math.round(player1.getCoins() - 10));
+                if (player.getCoins() >= 10){
+                    System.out.println("At night, the mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins.");
+                    player1.setCoins((int) Math.round(player1.getCoins() - 10));
+                }
+                else {
+                    System.out.println ("At night, the mysterious stranger returns and asks for more money. You show him your utterly empty wallet, and he feels so bad for you that he donates you 1 coin.");
+                    player1.set
+                }
             }
             else { 
                 System.out.println("At night, a mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way.");
