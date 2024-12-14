@@ -91,7 +91,7 @@ public class Driver{
             player1.emptyFarm();
         }
         if (nightmareType == 7){
-            int numLost = rand.nextInt(player1.getFarmSize());
+            int numLost = rand.nextInt(player1.getFarmSize() + 1);
             System.out.println("Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants. ");
             player1.removeFarm(numLost);
         }
