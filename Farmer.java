@@ -62,6 +62,17 @@ public abstract class Farmer{
     farm = new ArrayList<int>();
   }
 
+  public void removeFarm(int num){
+    if (num > farm.size()){
+      farm = new ArrayList<int>();
+    }
+    else{ 
+      for (int i =0; i<num; i++){
+        farm.remove(0);
+      }
+    }
+  }
+
   public int getTurns(){
     return turns;
   }
