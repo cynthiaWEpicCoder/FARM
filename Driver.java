@@ -6,6 +6,7 @@ public class Driver{
         Random rand = new Random();
         Scanner input = new Scanner(System.in);
         boolean strangerHasCome = false;
+        Farmer player1;
         
         System.out.println("What is your name?");
         String name = input.nextLine();
