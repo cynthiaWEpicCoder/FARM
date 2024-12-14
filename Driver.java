@@ -29,7 +29,7 @@ public class Driver{
             System.out.println("~~~~~~~~ DAY " + day + " ~~~~~~~~");
             while (player1.getTurns() > 0){
                 player1.printStatus();
-                System.out.println("What will you do next? \n1 to plant \n2 to water \n3 to harvest \n4 to produce item \n5 to sell item");
+                System.out.println("What will you do next? \n1 to plant \n2 to water (water twice to ripen!) \n3 to harvest  \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
                 turn(move);
             }
