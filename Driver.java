@@ -59,6 +59,7 @@ public class Driver{
     }
 
     public static void nightmare(){
+        Random rand = new Random();
         int nightmareType = rand.nextInt(10) + 1;
         if (nightmareType == 1){
             System.out.println("A tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
