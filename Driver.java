@@ -36,7 +36,8 @@ public class Driver{
             }
             stonksUp = false;
             daylightGivings = false;
-            System.out.println("You are out of moves today. Great day of work! Goodnight.");
+            System.out.println("You are out of moves today. Great day of work! These are your stats by the end of the day: ");
+            player1.printStatus();
             nightmare();
             player1.setTurns(5);
             if (daylightGivings){
@@ -67,7 +68,7 @@ public class Driver{
     public static void nightmare(){
         int nightmareType = rand.nextInt(10) + 1;
         if (nightmareType == 1){
-            System.out.println("A tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
+            System.out.println("Last night, a tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
             player1.emptyInventory();
         }
         if (nightmareType == 2){
@@ -76,25 +77,25 @@ public class Driver{
         }
         if (nightmareType == 3){
             int lossPercent = (rand.nextInt(5)+ 1) * 10;
-            System.out.println("Jim the Mild Demon visits your farm and helps himself to some yummy coins. You lose " + lossPercent+ "% of your coins. Unfortunate.");
+            System.out.println("At night, Jim the Mild Demon visits your farm and helps himself to some yummy coins. You lose " + lossPercent+ "% of your coins. Unfortunate.");
             player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
         if (nightmareType == 4){
             int lossPercent = (rand.nextInt(5)+ 6) * 10;
-            System.out.println("Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
+            System.out.println("At night, Jennifer the Spicy Demon visits your farm. You lose " + lossPercent+ "% of your coins. Unfortunate.");
             player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
         if (nightmareType == 5){
-            System.out.println("Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
+            System.out.println("At night, Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
             player1.setCoins((int) Math.round(player1.getCoins() * 0.75));
         }
         if (nightmareType == 6){
-            System.out.println("Jack the Hungry Demon visits your farm. He eats all of your plants. Your farm is now size 0.");
+            System.out.println("At night, Jack the Hungry Demon visits your farm. He eats all of the crops from your farm. Yum! Your farm is now size 0...");
             player1.emptyFarm();
         }
         if (nightmareType == 7){
-            int numLost = rand.nextInt(player1.getFarmSize() + 1);
-            System.out.println("Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants. ");
+            int numLost = rand.nextInt(player1.getFarmSize())+1;
+            System.out.println("At night, Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants from your farm. ");
             player1.removeFarm(numLost);
         }
         if (nightmareType == 8){
@@ -109,11 +110,11 @@ public class Driver{
             }
         }
         if (nightmareType == 9){ 
-            System.out.println("Congrats! You win 20 coins from a lottery somewhere.");
+            System.out.println("At night, a mysterious lottery ticket appears in your mailbox. You check the winning numbers and you won 20 coins!");
             player1.setCoins((int) Math.round(player1.getCoins() + 20));
         }
         if (nightmareType == 10){
-            System.out.println("Daylight gainings occurs. You get 2 extra moves tomorrow. Spend them wisely...");
+            System.out.println("You wake up oddly early to the sun in your face. Daylight gainings is today! You get 2 extra moves. Spend them wisely...");
             daylightGivings = true;
         }
     }       
