@@ -1,12 +1,12 @@
 import java.util.*;
 
 public class Driver{
-    public int day = 0;
-    public boolean stonksUp = false;
-    public boolean daylightGivings = false;
-    public Random rand = new Random();
-    public boolean strangerHasCome = false;
-    public Farmer player1;
+    static int day = 0;
+    static boolean stonksUp = false;
+    static boolean daylightGivings = false;
+    static Random rand = new Random();
+    static boolean strangerHasCome = false;
+    static Farmer player1;
     public static void main (String[] args){
         Scanner input = new Scanner(System.in);
         System.out.println("What is your name?");
