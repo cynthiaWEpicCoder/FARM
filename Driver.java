@@ -1,13 +1,14 @@
 import java.util.*;
 
 public class Driver{
+    public int day = 0;
+    public boolean stonksUp = false;
+    public boolean daylightGivings = false;
+    public Random rand = new Random();
+    public Scanner input = new Scanner(System.in);
+    public boolean strangerHasCome = false;
+    public Farmer player1;
     public static void main (String[] args){
-        int day = 0;
-        Random rand = new Random();
-        Scanner input = new Scanner(System.in);
-        boolean strangerHasCome = false;
-        Farmer player1;
-        
         System.out.println("What is your name?");
         String name = input.nextLine();
         System.out.println ("Hello " + name + ", and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
@@ -32,15 +33,15 @@ public class Driver{
                 int move = input.nextInt();
                 turn(move, player1);
             }
-            boolean stonksUp = false;
-            boolean daylightGivings = false;
+            stonksUp = false;
+            daylightGivings = false;
             System.out.println("You are out of moves today. Great day of work! Goodnight.");
             nightmare();
             player1.setTurns(5);
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
     }
-    public static void turn(int turnType, Farmer player1){
+    public static void turn(int turnType){
         if (turnType == 1){
             player1.plant();
         }
@@ -59,7 +60,6 @@ public class Driver{
     }
 
     public static void nightmare(){
-        Random rand = new Random();
         int nightmareType = rand.nextInt(10) + 1;
         if (nightmareType == 1){
             System.out.println("A tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
