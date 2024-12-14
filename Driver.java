@@ -69,7 +69,7 @@ public class Driver{
     public static void nightmare(){
         int nightmareType = rand.nextInt(22) + 1;
         if (1 <= nightmareType && nightmareType <= 3){
-            System.out.println("Last night, a tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
+            System.out.println("Last night, a tornado visits your farm. Your farmhouse is in pieces. Your inventory is now size 0.");
             player1.emptyInventory();
         }
         if (nightmareType == 4){
