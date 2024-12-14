@@ -5,6 +5,7 @@ public class Driver{
         int day = 0;
         Random rand = new Random();
         Scanner input = new Scanner(System.in);
+        boolean strangerHasCome = false;
         
         System.out.println("What is your name?");
         String name = input.nextLine();
@@ -33,6 +34,7 @@ public class Driver{
             boolean stonksUp = false;
             boolean daylightGivings = false;
             System.out.println("You are out of moves today. Great day of work! Goodnight.");
+            nightmare();
             player1.setTurns(5);
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
@@ -56,7 +58,7 @@ public class Driver{
     }
 
     public static void nightmare(){
-        int nightmareType = rand.nextInt(11) + 1;
+        int nightmareType = rand.nextInt(10) + 1;
         if (nightmareType == 1){
             System.out.println("A tornado visits your farm. All of your crops are gone. Your inventory is now size 0.");
             player1.emptyInventory();
@@ -77,13 +79,35 @@ public class Driver{
         }
         if (nightmareType == 5){
             System.out.println("Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
-            player1.setCoings(player1.getCoins() * 0.75);
+            player1.setCoins(player1.getCoins() * 0.75);
         }
         if (nightmareType == 6){
             System.out.println("Jack the Hungry Demon visits your farm. He eats all of your plants. Your farm is now size 0.");
             player1.emptyFarm();
         }
         if (nightmareType == 7){
-            
-    }               
+            int numLost = rand.nextInt(player1.getFarmSize());
+            System.out.println("Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants. ");
+            player1.removeFarm(numLost);
+        }
+        if (nightmareType = 8){
+            if (strangerHasCome){
+                System.out.println("At night, the mysterious stranger returns and asks for more money. You refuse, so he beats you up and takes 10 coins.");
+                player1.setCoins(player2.getCoins() - 10);
+            }
+            else { 
+                System.out.println("At night, a mysterious injured stranger visits your farm. You pay 10 coins for his medical bills, and send him on his way.");
+                player1.setCoins(player2.getCoins() - 10);
+                strangerHasCome = true;
+            }
+        }
+        if (nightmareType = 9){ 
+            System.out.println("Congrats! You win 20 coins from a lottery somewhere.");
+            player1.setCoins(player2.getCoins() + 20);
+        }
+        if (nightmareType = 10){
+            System.out.println("Daylight gainings occurs. You get 2 extra moves tomorrow. Spend them wisely...");
+            daylightGivings = true;
+        }
+    }       
 }
