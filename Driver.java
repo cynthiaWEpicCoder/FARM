@@ -38,6 +38,9 @@ public class Driver{
             System.out.println("You are out of moves today. Great day of work! Goodnight.");
             nightmare();
             player1.setTurns(5);
+            if (daylightGivings){
+                player1.setTurns(7);
+            }
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
     }
