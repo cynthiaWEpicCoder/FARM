@@ -166,5 +166,5 @@ public abstract class Farmer{
       System.out.println("You went to the market and sold a " + this.getProduce() + ".");
     }
   }
-  
+
 }
