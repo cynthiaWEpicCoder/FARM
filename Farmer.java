@@ -140,7 +140,7 @@ public abstract class Farmer{
       inv.remove(ripeInd);
       inv.add(this.getProduce());
       turns -= 1;
-      System.out.print("You used a ripe " + this.getCrop() + " to produce a " + this.getProduce() + ".");
+      System.out.println("You used a ripe " + this.getCrop() + " to produce a " + this.getProduce() + ".");
     }
   }
   
