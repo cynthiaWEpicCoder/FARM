@@ -30,7 +30,7 @@ public class Driver{
                 player1.printStatus();
                 System.out.println("What will you do next? \n1 to plant \n2 to water \n3 to harvest \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
-                turn(move);
+                turn(move, player1);
             }
             boolean stonksUp = false;
             boolean daylightGivings = false;
@@ -40,7 +40,7 @@ public class Driver{
         }
         System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home.");
     }
-    public static void turn(int turnType){
+    public static void turn(int turnType, Farmer player1){
         if (turnType == 1){
             player1.plant();
         }
