@@ -59,12 +59,12 @@ public abstract class Farmer{
   }
 
   public void emptyFarm(){
-    farm = new ArrayList<int>();
+    farm.clear();
   }
 
   public void removeFarm(int num){
     if (num > farm.size()){
-      farm = new ArrayList<int>();
+      farm.clear();
     }
     else{ 
       for (int i =0; i<num; i++){
