@@ -15,13 +15,13 @@ public class Driver{
         System.out.println ("What type of farmer will you be? \n1 for fruit farmer \n2 for grain farmer \n3 for veggie farmer");
         int farmerType = input.nextInt();
         if (farmerType == 1){
-            Farmer player1 = new FruitFarmer(name);
+            player1 = new FruitFarmer(name);
         }
         if (farmerType == 2){
-            Farmer player1 = new GrainFarmer(name);
+            player1 = new GrainFarmer(name);
         }
         if (farmerType == 3){
-            Farmer player1 = new VeggieFarmer(name);
+            player1 = new VeggieFarmer(name);
         }
         while (player1.getCoins() < 100){
             day ++;
