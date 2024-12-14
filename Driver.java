@@ -95,9 +95,14 @@ public class Driver{
             player1.emptyFarm();
         }
         if (15 <= nightmareType && nightmareType <= 17){
-            int numLost = rand.nextInt(player1.getFarmSize())+1;
-            System.out.println("At night, Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants from your farm. ");
-            player1.removeFarm(numLost);
+            if (player1.getFarmSize() == 0){
+                System.out.println("At night, Jill the Angry Demon visits your farm. She was hoping to take a little snack from your farm, but it was empty so she left hangry. How disappointing.");
+            }
+            else{ 
+                int numLost = rand.nextInt(player1.getFarmSize())+1;
+                System.out.println("At night, Jill the Angry Demon visits your farm. She eats " + numLost + " of your plants from your farm. ");
+                player1.removeFarm(numLost);
+            }
         }
         if (18 <= nightmareType && nightmareType <= 20){
             if (strangerHasCome){
