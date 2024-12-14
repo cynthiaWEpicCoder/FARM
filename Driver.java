@@ -5,10 +5,10 @@ public class Driver{
     public boolean stonksUp = false;
     public boolean daylightGivings = false;
     public Random rand = new Random();
-    public Scanner input = new Scanner(System.in);
     public boolean strangerHasCome = false;
     public Farmer player1;
     public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
         System.out.println("What is your name?");
         String name = input.nextLine();
         System.out.println ("Hello " + name + ", and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
