@@ -12,7 +12,8 @@ public class Driver{
         System.out.println("What is your name?");
         String name = input.nextLine();
         System.out.println ("Hello " + name + ", and welcome to Nightmare Farm! You used to be a student at Stuyvesant High School, but then one day you were taken away. You're not quite sure what happened, but now you're here, and you want to leave as fast as possible.");
-        System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 150 gold coins. To make money, you need to work.");
+        System.out.println ("Unfortunately, the only way to escape is through the Super-Duper-Rico Train, which for some reason costs 150 gold coins. To make money, you need to work. The Super-Duper-
+        Rico station opens every day at midnight, but at Nightmare Farm, something happens every day at 11 PM...");
         System.out.println ("What type of farmer will you be? \n1 for fruit farmer \n2 for grain farmer \n3 for veggie farmer");
         int farmerType = input.nextInt();
         if (farmerType == 1){
@@ -36,9 +37,9 @@ public class Driver{
             }
             stonksUp = false;
             daylightGivings = false;
-            System.out.println("You are out of moves today. Great day of work! These are your stats by the end of the day: ");
-            player1.printStatus();
             nightmare();
+            System.out.println("Great day of work! These are your stats by the end of the day: ");
+            player1.printStatus();
             player1.setTurns(5);
             if (daylightGivings){
                 player1.setTurns(7);
