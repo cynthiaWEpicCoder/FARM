@@ -87,7 +87,7 @@ public class Driver{
             player1.setCoins((int) Math.round(player1.getCoins() * (1-lossPercent*0.01)));
         }
         if (nightmareType == 11){
-            System.out.println("At night, Mira the Chill Demon visits your farm. She takes 75% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
+            System.out.println("At night, Mira the Chill Demon visits your farm. She takes 25% of your coins and buys a Gracie Abrams concert ticket. Thanks!");
             player1.setCoins((int) Math.round(player1.getCoins() * 0.75));
         }
         if (12 <= nightmareType && nightmareType <= 14){
