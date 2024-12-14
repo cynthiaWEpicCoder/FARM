@@ -54,6 +54,10 @@ public abstract class Farmer{
     return farm.toString();
   }
 
+  public int getFarmSize(){
+    return farm.size();
+  }
+
   public void emptyFarm(){
     farm = new ArrayList<int>();
   }
