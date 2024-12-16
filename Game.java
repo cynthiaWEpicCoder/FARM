@@ -66,17 +66,20 @@ public class Game{
         if (turnType == 1){
             player1.plant();
         }
-        if (turnType == 2){
+        else if (turnType == 2){
             player1.water();
         }
-        if (turnType == 3){
+        else if (turnType == 3){
             player1.harvest();
         }
-        if (turnType == 4){
+        else if (turnType == 4){
             player1.produce();
         }
-        if (turnType == 5){
+        else if (turnType == 5){
             player1.sell(stonksUp);
+        }
+        else (){
+            System.out.println ("Invalid input");
         }
     }
 
