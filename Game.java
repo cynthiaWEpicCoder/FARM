@@ -38,10 +38,7 @@ public class Game{
                     System.out.println("Invalid response.");  
                     continue;
                 }
-                if (move < 0 || move > 5){
-                    System.out.println ("Invalid response.");
-                    continue;
-                }
+
                 if (move == 911){
                     System.exit(0);
                 }
