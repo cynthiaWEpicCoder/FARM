@@ -7,7 +7,7 @@ public class Driver{
     static Random rand = new Random();
     static boolean strangerHasCome = false;
     static Farmer player1;
-    public static void main (String[] args){
+    public static void main (String[] args) throws Exception{
         Scanner input = new Scanner(System.in);
         System.out.println("What is your name?");
         String name = input.nextLine();
@@ -29,10 +29,18 @@ public class Driver{
             System.out.println("~~~~~~~~ DAY " + day + " ~~~~~~~~");
             while (player1.getTurns() > 0){
                 player1.printStatus();
+                try{
                 System.out.println("What will you do next? \n1 to plant \n2 to water (water twice to ripen!) \n3 to harvest  \n4 to produce item \n5 to sell item");
                 int move = input.nextInt();
+                }catch (Exception e){
+                    System.out.println("Yousuck");
+                    continue;
+                }
                 if (move == 911){
                     System.exit(0);
+                }
+                if (move < 1 || move > 5){
+                    continue;
                 }
                 turn(move);
                 System.out.println();
