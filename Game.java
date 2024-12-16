@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Driver{
+public class Game{
     static int day = 0;
     static boolean stonksUp = false;
     static boolean daylightGivings = false;
