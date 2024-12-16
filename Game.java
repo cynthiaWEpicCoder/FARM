@@ -35,9 +35,7 @@ public class Game{
                 input.nextLine();
                 move = input.nextInt();
                 }catch (Exception e){
-                    System.out.println("Yousuck");
-                    move += 1
-                        
+                    System.out.println("Invalid response.");  
                     continue;
                 }
                 if (move == 911){
