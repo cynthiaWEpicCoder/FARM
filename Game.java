@@ -32,8 +32,9 @@ public class Game{
                 player1.printStatus();
                 try{
                 System.out.println("What will you do next? \n1 to plant \n2 to water (water twice to ripen!) \n3 to harvest  \n4 to produce item \n5 to sell item");
-                input.nextLine();
+                
                 move = input.nextInt();
+                    input.nextLine();
                 }catch (Exception e){
                     System.out.println("Invalid response.");  
                     continue;
