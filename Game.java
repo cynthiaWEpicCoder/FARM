@@ -78,7 +78,7 @@ public class Game{
         else if (turnType == 5){
             player1.sell(stonksUp);
         }
-        else (){
+        else {
             System.out.println ("Invalid input");
         }
     }
