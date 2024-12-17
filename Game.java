@@ -68,7 +68,7 @@ public class Game{
             } 
             System.out.println();
         }
-        System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home in " + player.getTurns() + " days.");
+        System.out.println("You collected " + player1.getCoins() + " coins and bought a ticket home in " + player1.getTurns() + " days.");
         System.out.println ("You take a seat on the Super-Duper-Rico train and breathe out a sigh of relief. The train hurtles out of the station, and you watch Nightmare Farm disappear into the distance outside the window. Soon enough, the steady jostling of the train puts you into a deep sleep, and hours later, you open your eyes to find that you are back in the comfort of your bed, safe within your home. Murky memories of a farm, and demons, and annoying mysterious men start to surface, but they fade quickly as you turn over and go back to sleep. What a strange dream! Or was it?");
     }
     public static void turn(int turnType){
