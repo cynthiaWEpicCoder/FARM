@@ -17,7 +17,6 @@ public class Game{
         int farmerType = -1;
         while (farmerType == -1){
             try{ 
-                input.nextLine();
                 farmerType = input.nextInt();
                 if (farmerType < 1 || farmerType > 3){
                     farmerType = -1;
@@ -25,6 +24,7 @@ public class Game{
                 }
             }catch (Exception e){
                 System.out.println("Invalid response. Try again.");
+                input.nextLine();
                 continue;
             }
         }
