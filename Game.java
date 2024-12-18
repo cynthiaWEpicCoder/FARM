@@ -59,9 +59,9 @@ public class Game{
             }
             stonksUp = false;
             daylightGivings = false;
-            nightmare();
             System.out.println("Great day of work! These are your stats by the end of the day: ");
             player1.printStatus();
+            nightmare();
             player1.setTurns(5);
             if (daylightGivings){
                 player1.setTurns(7);
